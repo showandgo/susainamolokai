@@ -1,1 +1,1 @@
-# susainamolokai
+# The Molokai Mapping Project
