@@ -14,7 +14,9 @@ https://doi.org/10.3133/pp1834.
 Source: Selmants, P.C., Giardina, C.P., Jacobi, J.D., and Zhu, Zhiliang, eds., 2017, Baseline and projected future carbon storage and carbon fluxes in ecosystems of Hawai‘i: U.S. Geological Survey Professional Paper 1834, 134 p.,
 https://doi.org/10.3133/pp1834.
 
-### Have something to say? Get in touch! Or just say Aloha
+
+
+##### Have something to say? Get in touch! Or just say Aloha:)
 
 <form
   action="https://formspree.io/f/mqkngonp"
