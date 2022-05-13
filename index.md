@@ -16,7 +16,7 @@ https://doi.org/10.3133/pp1834.
 
 
 
-#### :hibiscus: Have something to say? Get in touch! Or just say Aloha:) :hibiscus:
+#### Have something to say? Get in touch! Or just say Aloha:)
 
 <form
   action="https://formspree.io/f/mqkngonp"
