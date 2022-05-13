@@ -5,12 +5,12 @@
 There is so much good science and local regenerative efforts in the Moloka'i community. This platform seeks to be a place for all to discover and share all the *mana'o* we have accumulated, and in so doing have a shared understanding of Moloka'i's rich history, culture and biome.
 
 The maps below are split into two categories-
-1. Place
+* Place
    
    * Signifying our sense of place, a connection to our history, which *Ahupuaa* we belong to
 <br>
 
-2. Biome
+* Biome
    
    * What grows where you are? Where exactly are the boundaries of ecological zones (*wao*) located?
 <br>
@@ -39,7 +39,7 @@ The maps below are split into two categories-
 
 ## Potential Applications
 
-1.  Spatial Planning & Conservation 
+  Spatial Planning & Conservation 
     
     * Locating Resilience Center, food hub  
     * Relocating town center/ critical infrastructure
@@ -47,11 +47,11 @@ The maps below are split into two categories-
     * Ahupuaa Management
     * Reintroduction of native agriculture/ species
 
-2.  Educational Tool 
+  Educational Tool 
     
     * Ali’i era social ecological zones 
 
-3.  Non-exhaustive! 
+  Non-exhaustive! 
     
     * Additional layers- demographic, precipitation, sea level rise, land ownership parcels
     * Let me know what you'd like to see, or if you have a dataset you would like to showcase here! 
