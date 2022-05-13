@@ -18,8 +18,6 @@ The maps below are split into two categories-
 ***
 <br>
 <br>
-<br>
-<br>
 
 **Click on Box on the top right corner of the map to toggle layers on/off** 
 
@@ -38,41 +36,30 @@ The maps below are split into two categories-
 ***
 <br>
 <br>
-<br>
-<br>
 
 ## Potential Applications
 1. Spatial Planning & Conservation 
 
 <font size="2">
     
-Locating Resilience Center, food hub 
-
-    
-Relocating town center/ critical infrastructure
-
-    
-Separation of Wao kanaka, Wao la’au, Wao nahele, Wao kele, Wao akua
-
-    
-Ahupuaa Management
-
-    
-Reintroduction of native agriculture/ species </font>
+- Locating Resilience Center, food hub  
+- Relocating town center/ critical infrastructure
+- Separation of Wao kanaka, Wao la’au, Wao nahele, Wao kele, Wao akua
+- Ahupuaa Management
+- Reintroduction of native agriculture/ species </font>
 
 2. Educational Tool 
 
 <font size="2">
     
-Ali’i era social ecological zones </font>
+- Ali’i era social ecological zones </font>
 
 3. Non-exhaustive! 
 
 <font size="2"> 
     
-Additional layers- demographic, precipitation, sea level rise, land ownership parcels
-
-Let me know what you'd like to see, or if you have a dataset you would like to showcase here! </font>
+- Additional layers- demographic, precipitation, sea level rise, land ownership parcels
+- Let me know what you'd like to see, or if you have a dataset you would like to showcase here! </font>
 
 ***
 <br>
