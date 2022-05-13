@@ -14,7 +14,7 @@ Click on Box on the top right corner to toggle layers on/off
 
 ## Place
 <iframe src="demo_molokai.html" height="500" width="800"></iframe>
-<font size="10"> Source: State of Hawaii, GIS Portal. The Conservation Fund </font>
+<font size="3"> Source: State of Hawaii, GIS Portal. The Conservation Fund </font>
 
 
 ## Biome
