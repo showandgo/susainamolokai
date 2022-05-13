@@ -5,6 +5,7 @@
 There is so much good science and local regenerative efforts in the Moloka'i community. This platform seeks to be a place for all to discover and share all the *mana'o* we have accumulated, and in so doing have a shared understanding of Moloka'i's rich history, culture and biome.
 
 The maps below are split into two categories-
+
 **Place**
    
    * Signifying our sense of place, a connection to our history, which *Ahupuaa* we belong to
@@ -38,7 +39,7 @@ The maps below are split into two categories-
 <br>
 
 ## Potential Applications
-
+<br>
   **Spatial Planning & Conservation** 
     
    * Locating Resilience Center, food hub  
