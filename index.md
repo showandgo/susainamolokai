@@ -8,7 +8,7 @@ The maps below are split into two categories-
 
 **Place**
    
-   * Signifying our sense of place, a connection to our history, which *Ahupuaa* we belong to
+   * Signifying our sense of place and belonging, a connection to our history. Which *Ahupuaa* do you reside in?
 <br>
 
 **Biome**
