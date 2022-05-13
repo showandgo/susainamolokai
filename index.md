@@ -6,9 +6,9 @@ There is so much good science and local regenerative efforts in the Moloka'i com
 
 The maps below are split into two categories-
 1. Place
-    - Signifying our sense of place, a connection to our history, which *Ahupuaa* we belong to
+- Signifying our sense of place, a connection to our history, which *Ahupuaa* we belong to
 3. Biome
-    - What grows where you are? Where exactly are the boundaries of ecological zones (*wao*) located?
+- What grows where you are? Where exactly are the boundaries of ecological zones (*wao*) located?
 
 ***
 <br>
