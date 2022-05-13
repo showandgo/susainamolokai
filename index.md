@@ -7,12 +7,12 @@ There is so much good science and local regenerative efforts in the Moloka'i com
 The maps below are split into two categories-
 1. Place
 
-<font size="2"> Signifying our sense of place, a connection to our history, which *Ahupuaa* we belong to </font>
+Signifying our sense of place, a connection to our history, which *Ahupuaa* we belong to </font>
 <br>
 
-3. Biome
+2. Biome
 
-<font size="2"> What grows where you are? Where exactly are the boundaries of ecological zones (*wao*) located? </font>
+What grows where you are? Where exactly are the boundaries of ecological zones (*wao*) located? </font>
 <br>
 
 ***
@@ -38,28 +38,23 @@ The maps below are split into two categories-
 <br>
 
 ## Potential Applications
-1. Spatial Planning & Conservation 
 
-<font size="2">
+1. Spatial Planning & Conservation 
     
 - Locating Resilience Center, food hub  
 - Relocating town center/ critical infrastructure
 - Separation of Wao kanaka, Wao la’au, Wao nahele, Wao kele, Wao akua
 - Ahupuaa Management
-- Reintroduction of native agriculture/ species </font>
+- Reintroduction of native agriculture/ species
 
 2. Educational Tool 
-
-<font size="2">
     
-- Ali’i era social ecological zones </font>
+- Ali’i era social ecological zones 
 
 3. Non-exhaustive! 
-
-<font size="2"> 
     
 - Additional layers- demographic, precipitation, sea level rise, land ownership parcels
-- Let me know what you'd like to see, or if you have a dataset you would like to showcase here! </font>
+- Let me know what you'd like to see, or if you have a dataset you would like to showcase here! 
 
 ***
 <br>
