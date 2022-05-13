@@ -6,9 +6,12 @@ There is so much good science and local regenerative efforts in the Moloka'i com
 
 The maps below are split into two categories-
 1. Place
-- Signifying our sense of place, a connection to our history, which *Ahupuaa* we belong to
+
+<font size="2"> Signifying our sense of place, a connection to our history, which *Ahupuaa* we belong to </font>
+
 3. Biome
-- What grows where you are? Where exactly are the boundaries of ecological zones (*wao*) located?
+
+<font size="2"> What grows where you are? Where exactly are the boundaries of ecological zones (*wao*) located? </font>
 
 ***
 <br>
@@ -25,12 +28,12 @@ The maps below are split into two categories-
 
 ## Biome
 <iframe src="demo_mol_native.html" height="500" width="800"></iframe>
-Source: Selmants, P.C., Giardina, C.P., Jacobi, J.D., and Zhu, Zhiliang, eds., 2017, Baseline and projected future carbon storage and carbon fluxes in ecosystems of Hawai‘i: U.S. Geological Survey Professional Paper 1834, 134 p.,
-https://doi.org/10.3133/pp1834.
+<font size="1"> Source: Selmants, P.C., Giardina, C.P., Jacobi, J.D., and Zhu, Zhiliang, eds., 2017, Baseline and projected future carbon storage and carbon fluxes in ecosystems of Hawai‘i: U.S. Geological Survey Professional Paper 1834, 134 p.,
+[doi](https://doi.org/10.3133/pp1834). </font>
 
 <iframe src="demo_mol_nat_detl.html" height="500" width="800"></iframe>
-Source: Selmants, P.C., Giardina, C.P., Jacobi, J.D., and Zhu, Zhiliang, eds., 2017, Baseline and projected future carbon storage and carbon fluxes in ecosystems of Hawai‘i: U.S. Geological Survey Professional Paper 1834, 134 p.,
-https://doi.org/10.3133/pp1834.
+<font size="1"> Source: Selmants, P.C., Giardina, C.P., Jacobi, J.D., and Zhu, Zhiliang, eds., 2017, Baseline and projected future carbon storage and carbon fluxes in ecosystems of Hawai‘i: U.S. Geological Survey Professional Paper 1834, 134 p.,
+[doi](https://doi.org/10.3133/pp1834). </font>
 
 ***
 <br>
@@ -40,16 +43,37 @@ https://doi.org/10.3133/pp1834.
 
 ## Potential Applications
 1. Spatial Planning & Conservation 
-    - Locating Resilience Center, food hub 
-    - Relocating town center/ critical infrastructure
-    - Separation of Wao kanaka, Wao la’au, Wao nahele, Wao kele, Wao akua
-    - Ahupuaa Management
-    - Reintroduction of native agriculture/ species
+
+<font size="2">
+    
+    Locating Resilience Center, food hub 
+
+    
+    Relocating town center/ critical infrastructure
+
+    
+    Separation of Wao kanaka, Wao la’au, Wao nahele, Wao kele, Wao akua
+
+    
+    Ahupuaa Management
+
+    
+    Reintroduction of native agriculture/ species
+
 2. Educational Tool 
-    - Ali’i era social ecological zones
+
+
+<font size="2">
+    
+    Ali’i era social ecological zones 
+
 3. Non-exhaustive! 
-    - Additional layers- demographic, precipitation, sea level rise, land ownership parcels
-    - Let me know what you'd like to see, or if you have a dataset you would like to showcase here!
+
+
+<font size="2"> 
+    
+    Additional layers- demographic, precipitation, sea level rise, land ownership parcels
+ Let me know what you'd like to see, or if you have a dataset you would like to showcase here! </font>
 
 ***
 <br>
