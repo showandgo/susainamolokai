@@ -14,6 +14,7 @@ The maps below are split into two categories-
 **Biome**
    
    * What grows where you are? Where exactly are the boundaries of ecological zones (*wao*) located?
+   * In a detailed map of the biome surrounding, and upstream of Keawanui Fishpond below, do you notice where the dry, mesic, and wet zones are?
 <br>
 
 ***
