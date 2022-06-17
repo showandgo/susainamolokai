@@ -1,0 +1,203 @@
+---
+title: "Molokai Map Proj"
+output: html_notebook
+---
+
+```{r setup}
+library(leaflet)
+library(raster)
+library(rgdal)
+
+library(rgeos)
+library(gstat)
+library(sp)
+
+library(htmlwidgets)
+
+```
+
+```{r}
+#contour<- readOGR(dsn = ".", layer = "molcntrs100", verbose = F)
+ahu<- readOGR("mol_ahupuaa.shp")
+moku<- readOGR("mol_moku.shp")
+dem<- raster("molokai_dem1.tif")
+arch_poly<- readOGR("ArchStsMMjr_Proj.shp")
+arch_pnt<- readOGR("poly.shp")
+
+#cah<- raster("C:/all_data/remote sensing data/CAH_LandCover/CAH_HabStatus/CAH_HabStatus.tif")
+
+cah<- readOGR("C:/all_data/remote sensing data/CAH_LandCover/CAH_HabStatus/CAH_Hab_vector_mol.shp")
+cah_fish<- readOGR("cah_fishp_det.shp")
+```
+
+## Project shapefiles to WGS84 
+
+Compliant projection for leaflet 
+```{r}
+ahu_latlon <- spTransform(ahu, CRS("+proj=longlat +datum=WGS84"))
+moku_latlon <- spTransform(moku, CRS("+proj=longlat +datum=WGS84"))
+
+arch_poly_latlon <- spTransform(arch_poly, CRS("+proj=longlat +datum=WGS84"))
+arch_pnt_latlon <- spTransform(arch_pnt, CRS("+proj=longlat +datum=WGS84"))
+
+cah_latlon <- spTransform(cah, CRS("+proj=longlat +datum=WGS84"))
+cahf_latlon <- spTransform(cah_fish, CRS("+proj=longlat +datum=WGS84"))
+```
+
+
+```{r, eval=FALSE}
+#plot(contour, col = "dark blue")
+```
+
+## Raster checks
+
+```{r}
+cah_fish %>% 
+  values() %>% 
+  hist(main="Distribution of DEM pixel values",col= "maroon")
+```
+
+```{r}
+cah %>% crs()
+```
+
+## Icon for markers
+
+```{r}
+awesome <- makeAwesomeIcon(
+  icon = "font-awesome",
+  iconColor = "black",
+  markerColor = "orange",
+  library = "fa"
+)
+```
+
+
+## Trial/ Test Map
+
+```{r}
+pal <- colorFactor(palette = c("red", "red", "red", "red", "red", "red", "red", "red","red", "brown", "gray", "green", "black", "gray", "gray", "#c7e9b4", "gray", "gray", "orange", "orange", "orange", "orange", "orange", "#00441b", "#00441b", "#00441b", "#00441b", "#00441b", "#00441b", "#00441b"), domain = cahf_latlon$DETAILED_L)
+
+p<- leaflet() %>% 
+  addTiles() %>%
+  setView(lng = -156.85095008300593, lat = 21.054646343308143, zoom = 13) %>%
+  addPolygons(data = ahu_latlon, weight=2,col = 'black',fillOpacity = 0.2,
+              label= ahu_latlon$ahupuaa,
+              highlight = highlightOptions(color='white',weight=1),
+              group = "Ahupuaa") %>%
+  addPolygons(data = cahf_latlon,
+              weight=2,
+              color = ~pal(DETAILED_L),
+              label= cahf_latlon$DETAILED_L,
+              group = "Native/ Alien Biome"
+              ) %>% 
+  addMarkers(-156.85095008300593, 21.054646343308143, label = "Keawanui Fishpond") %>% 
+  addLayersControl(
+    overlayGroups = c("Ahupuaa", "Native/ Alien Biome"))
+
+p
+
+```
+
+
+
+```{r}
+pal <- colorFactor(palette = c("#737373", "red", "#a1d99b", "#00441b"),
+                     domain = cah_latlon$Descriptio)
+
+n <- leaflet() %>% 
+  addTiles() %>%
+  setView(lng = -157.01845, lat = 21.1429, zoom = 10) %>% 
+  addPolygons(data = cah_latlon,
+              weight=2,
+              color = ~pal(Descriptio),
+              fillOpacity = 0.8,
+              label= cah_latlon$Descriptio,
+              group = "Native/ Alien Biome"
+              ) %>% 
+  addLegend("bottomright", 
+            colors = c("#737373", "red", "#a1d99b", "#00441b"), 
+            labels= c("Bare or <5% Vegetation", "Heavily Disturbed","Native/ Alien Mix","Native Dominated")) %>% 
+  addLayersControl(
+    overlayGroups = c("Native/ Alien Biome"))
+n
+#addRasterImage(cah, colors= c("#f03b20", "#fed976", "#238b45", "#969696"), opacity = 0.5)
+```
+
+
+```{r}
+leaflet() %>% 
+  addTiles() %>%
+  setView(lng = -157.01845, lat = 21.1429, zoom = 10) %>%
+  addPolygons(data = moku_latlon, weight=2,col = '#525252',fillOpacity = 0.2,
+              label= moku_latlon$moku,
+              highlight = highlightOptions(color='white',weight=1),
+              group = "Moku") %>%
+  addPolygons(data = ahu_latlon, weight=2,col = 'black',fillOpacity = 0.2,
+              label= ahu_latlon$ahupuaa,
+              highlight = highlightOptions(color='white',weight=1),
+              group = "Ahupuaa") %>%
+  addAwesomeMarkers(data = arch_pnt_latlon,
+                    icon = awesome,
+                    label= arch_pnt_latlon$Type,
+                    group = "New Preservation Sites") %>%
+    addPolygons(data = arch_poly_latlon, weight=2,col = '#ef3b2c',fillOpacity = 0.8,
+              highlight = highlightOptions(color='white',weight=1),
+              group = "M. Major Archeological Sites") %>%
+  addLayersControl(
+    overlayGroups = c("Moku", "Ahupuaa", "M. Major Archeological Sites", "New Preservation Sites"))
+
+#addCircleMarkers(data = arch_pnt_latlon,
+              #label= arch_pnt_latlon$Type,
+              #fillColor = "goldenrod",
+              #fillOpacity = 1, stroke = F,
+              #group = "W. Molokai Archeological Sites") %>%
+```
+
+## Map for Production
+
+
+```{r}
+#pal <- colorNumeric("YlOrBr", dem, na.color = "transparent")
+
+
+m<- leaflet() %>% 
+  setView(lng = -157.01845, lat = 21.1429, zoom = 10) %>% 
+  addTiles() %>%
+  addPolygons(data = moku_latlon, weight=2,col = '#525252',fillOpacity = 0.2,
+              label= moku_latlon$moku,
+              highlight = highlightOptions(color='white',weight=1),
+              group = "Moku") %>%
+  addPolygons(data = ahu_latlon, weight=2,col = 'black',fillOpacity = 0.2,
+              highlight = highlightOptions(color='white',weight=1), 
+              label= ahu_latlon$ahupuaa, 
+              group = "Ahupuaa") %>%
+  addAwesomeMarkers(data = arch_pnt_latlon,
+                    icon = awesome,
+                    label= arch_pnt_latlon$Type,
+                    group = "M. Major Archeological Sites") %>% 
+  addPolygons(data = arch_poly_latlon, weight=2,col = '#54278f',fillOpacity = 0.8,
+              highlight = highlightOptions(color='white',weight=1),
+              group = "New Preservation Sites") %>%
+  addRasterImage(dem, colors= "YlOrBr", opacity = 0.9, group = "Elevation") %>% 
+  addLayersControl(
+    overlayGroups = c("Moku", "Ahupuaa", "M. Major Archeological Sites", "New Preservation Sites", "Elevation"))
+
+#baseGroups = "Basemap",
+#addProviderTiles("CartoDB.Positron", group = "Basemap") %>%  
+#addLegend(colors= pal, values = values(dem@data@values), title = "Elevation")
+#addLegend(pal = "YlOrBr", values = dem@values)
+
+m
+```
+
+
+
+```{r}
+saveWidget(m, file= "demo_molokai.html")
+
+saveWidget(n, file= "demo_mol_native.html")
+
+saveWidget(p, file= "demo_mol_nat_detl.html")
+```
+

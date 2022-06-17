@@ -1,0 +1,31 @@
+---
+title: "clean_mol"
+output: html_document
+date: '2022-04-20'
+---
+Pull a database from shapefile, read in a .csv file with description of archeological site (0 = M Major/ 1 = Other sites).
+Create a new column in the shapefile database with a <merge>, and then write to a shapefile 
+
+```{r setup}
+library(tidyverse)
+library(sp)
+library(rgdal)
+```
+
+```{r}
+arch_pnt<- readOGR("AddArchSts_Proj.shp")
+View(arch_pnt)
+```
+
+```{r}
+id <- read.csv("for_spjoin.csv")
+```
+
+```{r}
+arch_pnt_merged <- merge(arch_pnt, id, by.x = "Id", by.y = "ID")
+```
+
+```{r}
+writeOGR(arch_pnt_merged, dsn = ".", layer = 'poly', driver = "ESRI Shapefile")
+```
+
