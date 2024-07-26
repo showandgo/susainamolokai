@@ -45,13 +45,13 @@ The maps below are split into two categories-
     
    * Locating Resilience Center, food hub  
    * Relocating town center/ critical infrastructure
-   * Separation of Wao kanaka, Wao la’au, Wao nahele, Wao kele, Wao akua
-   * Ahupuaa Management
+   * Separation of Wao kanaka, Wao laʻau, Wao nahele, Wao kele, Wao akua
+   * Ahupuaʻa Management
    * Reintroduction of native agriculture/ species
 
   **Educational Tool** 
     
-   * Ali’i era social ecological zones 
+   * Aliʻi era social ecological zones 
 
   **Non-exhaustive!** 
     
