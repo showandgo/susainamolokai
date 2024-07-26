@@ -8,4 +8,4 @@ View the webpage [here](https://showandgo.github.io/susainamolokai/)
 Do reach out if you wish to include a map layer in the webpage!
 
 Leave comments/ feedback directly on the webpage
-:hibiscus: Aloha! :hibiscus:
+Aloha! 
